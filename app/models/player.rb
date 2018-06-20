@@ -28,9 +28,7 @@ class Player < ApplicationRecord
 
 	def round_scores
 		self.rounds.select{|round| round.score > 0}.map do |round|
-			{
-				score: round.score
-			}
+			{ score: round.score }
 		end
 	end
 
