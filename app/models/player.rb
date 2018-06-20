@@ -16,4 +16,8 @@ class Player < ApplicationRecord
 		}
 	end
 
+	def self.leaderboard_positions
+		self.all.sort_by{|player| player.top_5_scores}.reverse.map{|x| x.leaderboard_data}
+	end
+
 end
