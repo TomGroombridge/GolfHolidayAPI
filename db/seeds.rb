@@ -29,3 +29,5 @@ Round.create(player_id: player1.id, course_id: course.id, score: 40)
 Round.create(player_id: player1.id, course_id: course.id, score: 10)
 Round.create(player_id: player1.id, course_id: course.id, score: 10)
 Round.create(player_id: player1.id, course_id: course.id, score: 0)
+
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?

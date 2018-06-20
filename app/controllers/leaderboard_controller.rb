@@ -1,4 +1,4 @@
-class LeaderboardController < ApplicationController
+class LeaderboardController < ApiController
 
 	def index
 		leaderboard = Player.leaderboard_positions
