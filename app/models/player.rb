@@ -13,11 +13,25 @@ class Player < ApplicationRecord
 		{
 			player_name: self.name,
 			score: top_5_scores,
+			rounds_completed: completed_rounds_count,
+			rounds: round_scores,
 		}
 	end
 
 	def self.leaderboard_positions
 		self.all.sort_by{|player| player.top_5_scores}.reverse.map{|x| x.leaderboard_data}
+	end
+
+	def completed_rounds_count
+		self.rounds.select{|round| round.score > 0}.count
+	end
+
+	def round_scores
+		self.rounds.select{|round| round.score > 0}.map do |round|
+			{
+				score: round.score
+			}
+		end
 	end
 
 end
