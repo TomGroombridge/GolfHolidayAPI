@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  score: MyString
+  par: MyString
+  stroke_index: MyString
+  points: MyString
+  round_id: MyString
+  hole_number: MyString
+
+two:
+  score: MyString
+  par: MyString
+  stroke_index: MyString
+  points: MyString
+  round_id: MyString
+  hole_number: MyString

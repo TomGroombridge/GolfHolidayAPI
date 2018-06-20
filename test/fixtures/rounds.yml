@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  player_id: MyString
+  interger: MyString
+  course_id: MyString
+  interger: MyString
+
+two:
+  player_id: MyString
+  interger: MyString
+  course_id: MyString
+  interger: MyString
