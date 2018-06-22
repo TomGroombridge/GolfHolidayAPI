@@ -26,19 +26,4 @@ Player.create(name: 'Alun Reese')
 Player.create(name: 'Alistar Brogdan')
 Player.create(name: 'Chris James')
 
-# Round.create(player_id: player.id, course_id: course.id, score: 30)
-# Round.create(player_id: player.id, course_id: course.id, score: 10)
-# Round.create(player_id: player.id, course_id: course.id, score: 40)
-# Round.create(player_id: player.id, course_id: course.id, score: 40)
-# Round.create(player_id: player.id, course_id: course.id, score: 40)
-
-
-
-# Round.create(player_id: player1.id, course_id: course.id, score: 30)
-# Round.create(player_id: player1.id, course_id: course.id, score: 20)
-# Round.create(player_id: player1.id, course_id: course.id, score: 40)
-# Round.create(player_id: player1.id, course_id: course.id, score: 10)
-# Round.create(player_id: player1.id, course_id: course.id, score: 10)
-# Round.create(player_id: player1.id, course_id: course.id, score: 0)
-
-AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
