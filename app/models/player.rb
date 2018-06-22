@@ -32,4 +32,13 @@ class Player < ApplicationRecord
 		end
 	end
 
+	def self.profiles
+		self.all.map do |player|
+			{
+				name: player.name,
+				description: player.profile,
+			}
+		end
+	end
+
 end
