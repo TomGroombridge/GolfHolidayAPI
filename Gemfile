@@ -42,6 +42,7 @@ group :test do
   gem 'shoulda',                      '~> 3.5'
   gem 'shoulda-callback-matchers',    '~> 1.1', '>= 1.1.3'
   gem 'simplecov',                    '~> 0.15.1',              require: false
+  gem 'database_cleaner'
 end
 
 group :development do
