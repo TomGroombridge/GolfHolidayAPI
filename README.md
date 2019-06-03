@@ -13,3 +13,18 @@ a round belongs to a course
 ## add a team
 a team has many players
 a player has many teams
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
