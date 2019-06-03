@@ -1,24 +1,15 @@
-# README
+#To Do
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## add an event
 
-Things you may want to cover:
+event_type symbol
 
-* Ruby version
+an event has many players
+a player has many events
+an event has many rounds
+a player has many rounds
+a round belongs to a course
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## add a team
+a team has many players
+a player has many teams
