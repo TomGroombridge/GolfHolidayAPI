@@ -10,20 +10,27 @@
 
 
 
-Course.create(name: 'Aroeira Course 1', description: 'Very Nice Course')
-Course.create(name: 'Oitavos Dunes', description: 'Very Nice Course')
-Course.create(name: 'Quinta Do Peru', description: 'Very Nice Course')
-Course.create(name: 'Aroeira Course 2', description: 'Very Nice Course')
-Course.create(name: 'Penha Longa Atlantic', description: 'Very Nice Course')
+course1 = Course.create(name: 'Aroeira Course 1', description: 'Very Nice Course', date:  Date.parse('08/06/2019'))
+course2 = Course.create(name: 'Oitavos Dunes', description: 'Very Nice Course', date:  Date.parse('09/06/2019'))
+course3 = Course.create(name: 'Quinta Do Peru', description: 'Very Nice Course', date:  Date.parse('10/06/2019'))
+course4 = Course.create(name: 'Aroeira Course 2', description: 'Very Nice Course', date:  Date.parse('11/06/2019'))
+course5 = Course.create(name: 'Penha Longa Atlantic', description: 'Very Nice Course', date:  Date.parse('12/06/2019'))
 
 
 
-Player.create(name: 'Tom Groombridge')
-Player.create(name: 'Stephen Brogdan')
-Player.create(name: 'Russell Pirie')
-Player.create(name: 'Jonny Atkins')
-Player.create(name: 'Alun Reese')
-Player.create(name: 'Alistar Brogdan')
-Player.create(name: 'Chris James')
+player1 = Player.create(name: 'Tom Groombridge')
+player2 = Player.create(name: 'Stephen Brogdan')
+player3 = Player.create(name: 'Russell Pirie')
+player4 = Player.create(name: 'Jonny Atkins')
+player5 = Player.create(name: 'Alun Reese')
+player6 = Player.create(name: 'Alistar Brogdan')
+player7 = Player.create(name: 'Chris James')
+
+
+Team.create(course: course1, players:[player1, player2])
+
+
+
+
 
 AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')

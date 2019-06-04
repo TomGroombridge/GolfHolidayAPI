@@ -1,5 +1,7 @@
 class Player < ApplicationRecord
 	has_many :rounds
+	has_many :team_players
+  has_many :teams, through: :team_players
 
 	def top_5_scores
 		sorted_rounds = self.rounds.sort_by {|round| round.score}.reverse

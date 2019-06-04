@@ -14,6 +14,9 @@ a team has many players
 a team has an event
 a player has many teams
 
+attributes :score, course_id
+
+
 
 
 
