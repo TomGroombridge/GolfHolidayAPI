@@ -1,30 +1,85 @@
-#To Do
+# DAY 1 => DONE
+Alun
+Ed
+Al
+Dowley
 
-## add an event
+Steve
+Jonny
+Rusty
+Groomo
 
-event_type symbol
+# DAY 2 => DONE
+Jonny
+Rusty
+Groomo
+Alun
 
-an event has many players
-a player has many events
-an event has many rounds
-a round has many events
+Al
+Ed
+Dowley
+Steve
 
-## add a team
-a team has many players
-a team has an event
-a player has many teams
+# DAY 3 => DONE
+Rusty
+Al
+Dowley
+Ed
 
-attributes :score, course_id
+Jonny
+Groomo
+Alun
+Steve
+
+----------------------------------------------------------------
+
+# DAY 4 => DONE
+Jonny
+Steve
+Rusty
+Ed
+
+Al
+CJ
+Dowley
+Groomo
+
+
+# DAY 5 => DONE
+Jonny
+Steve
+Al
+Groomo
+
+Rusty
+Ed
+CJ
+Dowley
+
+# DAY 6
+Jonny
+Ed
+Dowley
+Groomo
+
+Al
+Rusty
+CJ
+Steve
+
+
+# DAY 7
+Jonny
+Steve
+Ed
+CJ
+
+Dowley
+Groomo
+Al
+Rusty
 
 
 
 
 
-
-
-
-
-## event types
-:individual_stableford
-:team_stableford
-:team_and_individual_stableford

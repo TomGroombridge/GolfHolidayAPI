@@ -10,6 +10,13 @@ class Player < ApplicationRecord
 		@total_score
 	end
 
+	def top_5_team_scores
+		sorted_rounds = self.teams.sort_by {|team| team.score}.reverse
+		@total_score = 0
+		sorted_rounds[0..4].each {|round| @total_score += round.score}
+		@total_score
+	end
+
 
 	def leaderboard_data
 		{
@@ -22,6 +29,10 @@ class Player < ApplicationRecord
 
 	def self.leaderboard_positions
 		self.all.sort_by{|player| player.top_5_scores}.reverse.map{|x| x.leaderboard_data}
+	end
+
+	def self.accumalative_leaderboard_positions
+		self.all.sort_by{|player| player.top_5_team_scores}.reverse.map{|x| x.leaderboard_data}
 	end
 
 	def completed_rounds_count
