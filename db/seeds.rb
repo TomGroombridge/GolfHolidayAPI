@@ -27,12 +27,17 @@ player6 = Player.create(name: 'Alistar Brogdan')
 player7 = Player.create(name: 'Chris James')
 
 
-Team.create(course: course1, players:[player1, player2, player3])
-Team.create(course: course1, players:[player4, player5, player6])
+Team.create(course: course1, players:[player1, player2, player3], score: 90)
+Team.create(course: course1, players:[player4, player5, player6], score: 91)
 
 
 
 Round.create(player: player1, course: course1, score: 30, accumulative_score: 90)
+Round.create(player: player2, course: course1, score: 30, accumulative_score: 80)
+Round.create(player: player3, course: course1, score: 30, accumulative_score: 70)
+Round.create(player: player4, course: course1, score: 30, accumulative_score: 60)
+
+
 
 
 
