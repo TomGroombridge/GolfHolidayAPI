@@ -9,27 +9,28 @@ Jonny
 Rusty
 Groomo
 
-# DAY 2 => DONE
-Jonny
+
+# DAY 2	 => DONE
 Rusty
+Al
+Dowley
+Ed
+
+Jonny
 Groomo
 Alun
-
-Al
-Ed
-Dowley
 Steve
 
 # DAY 3 => DONE
-Rusty
-Al
-Dowley
 Ed
-
-Jonny
 Groomo
 Alun
 Steve
+
+Al
+Rusty
+Jonny
+Dowley
 
 ----------------------------------------------------------------
 
