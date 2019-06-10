@@ -8,8 +8,6 @@ class Team < ApplicationRecord
     self.all.sort_by{|team| team.score}.reverse.map{|x| x.leaderboard_data}
   end
 
-  private
-
   def leaderboard_data
     {
       team_players: team_players,
