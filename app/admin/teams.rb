@@ -3,7 +3,7 @@ ActiveAdmin.register Team do
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
 permit_params :score, :course_id, players_ids: []
-filter :course, :as => :select, :collection => Course.all.collect {|course| [course.date.strftime("%A, %b %d"), course.id] }, label: 'Course Date'
+# filter :course, :as => :select, :collection => Course.all.collect {|course| [course.date.strftime("%A, %b %d"), course.id] }, label: 'Course Date'
 
 index do
   id_column
