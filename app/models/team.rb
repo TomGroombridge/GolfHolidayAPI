@@ -5,7 +5,7 @@ class Team < ApplicationRecord
 
 
   def self.leaderboard
-    self.all.sort_by{|team| team.score}.reverse.map{|x| x.leaderboard_data}
+    Team.all.sort_by{|team| team.score}.reverse.map{|x| x.leaderboard_data}
   end
 
   def leaderboard_data
@@ -18,7 +18,6 @@ class Team < ApplicationRecord
   end
 
   def team_players
-    players = self.players.map{|player| player.name}
-    return players
+    self.players.map{|player| player.name}
   end
 end

@@ -12,7 +12,8 @@ class LeaderboardController < ApiController
 
   def team
     leaderboard = Team.leaderboard
-    render json: team.leaderboard.to_a
+    # byebug
+    render json: leaderboard.to_a
   end
 
 end
