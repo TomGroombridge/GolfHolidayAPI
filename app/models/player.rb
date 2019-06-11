@@ -27,21 +27,30 @@ class Player < ApplicationRecord
 		}
 	end
 
+	def accumalative_leaderboard_data
+		{
+			player_name: self.name,
+			score: top_4_accumalative_scores,
+			rounds_completed: completed_rounds_count,
+			rounds: accumalative_round_scores,
+		}
+	end
+
 	def self.leaderboard_positions
 		self.all.sort_by{|player| player.top_4_scores}.reverse.map{|x| x.leaderboard_data}
 	end
 
 	def self.accumalative_leaderboard_positions
-		self.all.sort_by{|player| player.top_4_accumalative_scores}.reverse.map{|x| x.leaderboard_data}
+		self.all.sort_by{|player| player.top_4_accumalative_scores}.reverse.map{|x| x.accumalative_leaderboard_data}
 	end
 
 	def completed_rounds_count
 		self.rounds.select{|round| round.score > 0}.count
 	end
 
-	def round_scores
-		self.rounds.select{|round| round.score > 0}.map do |round|
-			{ score: round.score }
+	def accumalative_round_scores
+		self.rounds.select{|round| round.accumulative_score > 0}.map do |round|
+			{ score: round.accumulative_score }
 		end
 	end
 
