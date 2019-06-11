@@ -19,9 +19,6 @@ course7 = Course.create(name: 'Espiche', description: 'Very Nice Course', date: 
 course8 = Course.create(name: 'Boavista', description: 'Very Nice Course', date:  Date.parse('15/06/2019'))
 
 
-
-
-
 player1 = Player.create(name: 'Groomo')
 player2 = Player.create(name: 'Steve')
 player3 = Player.create(name: 'Rusty')
@@ -41,9 +38,8 @@ Team.create(course: course2, players:[player3, player2, player4, player1], score
 Team.create(course: course3, players:[player6, player3, player8, player9], score: 95)
 Team.create(course: course3, players:[player1, player4, player2, player5], score: 91)
 
-Team.create(course: course4, players:[player8, player5, player1, player2], score: 0)
-Team.create(course: course4, players:[player6, player3, player4, player9], score: 0)
-
+Team.create(course: course4, players:[player8, player5, player1, player2], score: 97)
+Team.create(course: course4, players:[player6, player3, player4, player9], score: 107)
 
 
 AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
