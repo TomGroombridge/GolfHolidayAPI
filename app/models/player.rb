@@ -48,6 +48,12 @@ class Player < ApplicationRecord
 		self.rounds.select{|round| round.score > 0}.count
 	end
 
+	def round_scores
+		self.rounds.select{|round| round.score > 0}.map do |round|
+			{ score: round.score }
+		end
+	end
+
 	def accumalative_round_scores
 		self.rounds.select{|round| round.accumulative_score > 0}.map do |round|
 			{ score: round.accumulative_score }
