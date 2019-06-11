@@ -4,6 +4,10 @@ ActiveAdmin.register Round do
 #
 permit_params :score, :player_id, :course_id, :accumulative_score
 # filter :course, :as => :select, :collection => Course.all.collect {|course| [course.date.strftime("%A, %b %d"), course.id] }, label: 'Course Date'
+
+filter :course, collection: -> {
+  Course.all.map { |course| [course.date.strftime("%A, %b %d"), course.id] }
+}
 filter :player
 #
 # or
