@@ -30,5 +30,8 @@
 # Team.create(course: course4, players:[player8, player5, player1, player2], score: 97)
 # Team.create(course: course4, players:[player6, player3, player4, player9], score: 107)
 
+Team.create(course: course5, players:[player1, player2, player6, player9], score: 0)
+Team.create(course: course5, players:[player3, player4, player5, player8], score: 0)
+
 
 # AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
