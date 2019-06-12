@@ -6,7 +6,7 @@
 # course6 = Course.create(name: 'S.Antonio', description: 'Very Nice Course', date:  Date.parse('13/06/2019'))
 # course7 = Course.create(name: 'Espiche', description: 'Very Nice Course', date:  Date.parse('14/06/2019'))
 # course8 = Course.create(name: 'Boavista', description: 'Very Nice Course', date:  Date.parse('15/06/2019'))
-course = Course.find_by(date:  "2019-06-12")
+course = Course.find_by(date:  "2019-06-13")
 
 player1 = Player.find_by(name: 'Groomo')
 player2 = Player.find_by(name: 'Steve')
@@ -30,8 +30,8 @@ player9 = Player.find_by(name: 'Dowley')
 # Team.create(course: course4, players:[player8, player5, player1, player2], score: 97)
 # Team.create(course: course4, players:[player6, player3, player4, player9], score: 107)
 
-Team.create(course: course, players:[player1, player2, player6, player9], score: 0)
-Team.create(course: course, players:[player3, player4, player5, player8], score: 0)
+Team.create(course: course, players:[player1, player4, player6, player8], score: 0)
+Team.create(course: course, players:[player2, player3, player5, player9], score: 0)
 
 
 # AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
